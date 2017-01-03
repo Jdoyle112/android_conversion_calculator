@@ -2,6 +2,7 @@
     <string name="app_name">Currency Converter</string>
 
     <string-array name="currencies_array">
+        <item>USD</item>
         <item>EUR</item>
         <item>JPY</item>
         <item>GBP</item>

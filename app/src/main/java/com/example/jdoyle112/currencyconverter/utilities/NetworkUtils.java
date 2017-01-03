@@ -25,10 +25,10 @@ public class NetworkUtils {
 
 
     // builds the url
-    public static URL buildUrl(String currencySymbol){
+    public static URL buildUrl(String baseSymbol, String foreignCurrencySymbol){
         Uri builtUri = Uri.parse(API_BASE_URL).buildUpon()
-                .appendQueryParameter(BASE_PARAM, BASE_QUERY_VALUE)
-                .appendQueryParameter(SYMBOLS_PARAM, currencySymbol)
+                .appendQueryParameter(BASE_PARAM, baseSymbol)
+                .appendQueryParameter(SYMBOLS_PARAM, foreignCurrencySymbol)
                 .build();
         URL url = null;
         try {
